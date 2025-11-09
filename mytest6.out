@@ -1,0 +1,13 @@
+MKDIR SUCCESS: node a successfully created
+MKDIR SUCCESS: node a/b successfully created
+MKDIR SUCCESS: node a/b/c successfully created
+RMDIR ERROR: directory a/b is not empty
+MKDIR ERROR: directory a/b/c already exists
+MKDIR SUCCESS: node a/b/c successfully created
+/
+|   
+`---a
+    |   
+    `---b
+        |   
+        `---c
