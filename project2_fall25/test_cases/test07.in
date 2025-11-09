@@ -1,0 +1,10 @@
+mkdir a
+touch f1.txt
+mkdir b
+touch f2.txt
+mkdir c
+tree
+rmdir b
+mkdir b
+tree
+quit

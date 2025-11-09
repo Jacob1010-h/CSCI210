@@ -1,0 +1,17 @@
+mkdir a
+cd a
+mkdir b
+cd b
+mkdir c
+cd c
+mkdir d
+cd d
+mkdir e
+touch f1.txt
+touch f2.txt
+tree
+mkdir e
+rmdir e
+mkdir e
+tree
+quit
