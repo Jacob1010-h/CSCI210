@@ -1,1 +1,0 @@
-./logFileQuery.sh test03_in Jeremy Apr

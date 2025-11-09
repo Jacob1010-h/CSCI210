@@ -1,1 +1,0 @@
-./logFileQuery.sh test04_in Alice Feb
