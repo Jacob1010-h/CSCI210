@@ -1,5 +1,5 @@
-#!/bin/bash
 
+#!/bin/bash
 
 if [ $# -ne 3 ]; then
     echo "Usage: ./logFileQuery.sh <target dir> <person> <month>"
@@ -31,9 +31,13 @@ find "$TARGET_DIR" -type f | while read -r file; do
             # Extract year from first line
             year=$(echo "$first_line" | grep -oE "20(1[0-9]|2[0-4])" | head -n 1)
             if [ -n "$year" ]; then
-                # Search for person in this file
-                grep "$PERSON" "$file" >> "$OUTDIR/${PERSON}_${MONTH}_${year}.log"
+                # Search for person in this file (only write if matches exist)
+                matches=$(grep "$PERSON" "$file")
+                if [ -n "$matches" ]; then
+                    echo "$matches" >> "$OUTDIR/${PERSON}_${MONTH}_${year}.log"
+                fi
             fi
         fi
     fi
 done
+
