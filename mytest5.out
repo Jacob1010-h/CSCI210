@@ -1,8 +1,0 @@
-MKDIR SUCCESS: node a successfully created
-/
-|   
-`---a
-MKDIR ERROR: no path provided
-/
-|   
-`---a
