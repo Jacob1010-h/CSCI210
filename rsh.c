@@ -59,7 +59,7 @@ int main() {
 		continue;
 
 	if (!isAllowed(argv[0])) {
-		printf("NOT ALLOWED\n");
+		printf("NOT ALLOWED!\n");
 		continue;
 	}
 
@@ -69,9 +69,10 @@ int main() {
 
 	if ( strcmp(argv[0], "help") == 0) {
 		printf("The allowed commands are:\n");
-		for (int  i = 0; i < N; i++) {
-			printf("%s\n", allowed[i]);
+		for (int i = 0; i < N; i++) {
+			printf("%d: %s\n", i+1, allowed[i]);
 		}
+
 		continue;
 	}
 
